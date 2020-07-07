@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <head>
+    
+    <link rel="stylesheet" href="style.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title> Contact Us</title>
+        
+        <!-- My updated style sheet wouldn't upload to the server, so I had to put the style here. -->
+        <style>
+        h1.contact-header{
+    text-align: center; 
+    color: darkgoldenrod;
+}
+.contact-info{
+    display:flex;
+    padding-top: 30px;
+    margin-top: 60px;
+  width:50%; 
+  margin-left:auto; 
+    margin-right: auto;
+  padding: 20px;
+background-color: darkgoldenrod;
+}
+
+form{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    width: 96%;
+    margin: auto;
+    background-color: white;
+} 
+            @media screen and (max-width: 930px){
+                   .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        float:none;
+                }}
+        </style>
+        
+        </head>
+    
+    
+    <body>
+        
+        <nav class= "navbar">
+        
+        <img src="pitt.png" alt="pitt-logo">
+          <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="about.html">About Us</a></li>
+                <li> <a href="visit.html">Visit Us</a>
+                <ul>
+                        
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="lectures.html">Lectures</a></li>
+                    
+                        </ul>
+               
+
+                <li class="end-of-menu">
+                    <a href="contact.html">Contact Us</a>
+                   
+                </li>
+            </ul>
+    
+    </nav>
+    
+        
+        <h1 class= "contact-header"> Contact Us</h1>
+        <div class="contact-info">
+            <form action="mailto:aobsrvty@pitt.edu" method="post" enctype="text/plain">
+                
+                <label> Name: </label> <br> 
+                <input type="text" placeholder="Jane Doe" maxlength="40"> <br><br>
+                
+                <label> Phone: </label> <br> 
+                <input type="numbers" placeholder="412-234-5678" maxlength="12"> <br><br>
+    
+                <label> E-mail: </label> <br> 
+                <input type="email" placeholder="janedoe@gmail.com" maxlength="40"> <br><br>
+                    
+                <label> Message: </label><br>
+                <textarea placeholder="Got something to say?" ></textarea><br><br>
+                
+                <input type="submit" value= "Send" alt="submit form">
+    
+            </form>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <footer>
+            <p>
+            Allegheny Observatory<br>
+            159 Riverview Avenue <br>
+            Pittsburgh, PA 15214<br>
+            412-321-2400
+            </p>
+        </footer>
+        
+        
+    </body>
+    
+    
+</html>

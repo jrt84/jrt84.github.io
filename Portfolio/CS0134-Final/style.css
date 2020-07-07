@@ -1,0 +1,276 @@
+html{
+    background-color: #0C2340;
+    display: flex;
+    
+}
+body{
+    width: 950px;
+    background-image:linear-gradient(darkgoldenrod, white, white,  white, white, white, white, white, white);
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* Nav Bar --- I used the in-class menu exercise we did as a reference */
+.navbar{ height: 75px; background-color: white;position: sticky;}
+            
+nav img { height: 60px; padding-left: 5px; padding-top: 10px;}
+        
+nav ul{ list-style-type: none; padding-left: 0; display: inline; float: right; padding-top: 20px; }
+
+nav ul ul{ display: none;}
+
+nav ul li{ width: 150px;}
+
+nav > ul >li{ float: left;}
+
+nav ul a { display: block; text-decoration: none; background-color: white; color: darkgoldenrod; padding: 5px; text-align: center; }
+
+nav ul a:hover{ background-color: darkgoldenrod; color: white;}
+            
+nav ul li:hover > ul{ display:block; }
+            
+nav ul ul li:hover{ position: relative;}
+            
+nav ul ul li:hover > ul { position: absolute; display: block; left: 100%; top: 0px;}
+            
+nav ul li.end-of-menu li:hover > ul { position: absolute; display: block; left: -100%; top: 0px;}
+
+/* Home Page */
+.index-top{
+    display: flex;
+    flex-direction: row;
+}
+.index-top img{ height: 400px; padding-right: 20px; }
+.index-info h1{font-size: 35px; margin-left: 15px; color: darkgoldenrod;}
+.index-info p {font-size: 26px; color: #0C2340;  }
+
+.index-container{
+    border: 0.5px solid; color: #0C2340;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 97%; 
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    justify-content: space-around;
+}
+.open-house, .tours, .lectures{
+    background-color: white;  
+    
+}
+.open-house h2, .tours h2, .lectures h2{
+    text-align: center;
+    color: darkgoldenrod;
+}
+.tours p , .lectures p, .open-house p{
+    padding: 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a.open-house, a.tours, a.lectures{
+    text-decoration: none;
+}
+
+/* Visit Page */
+p.visit-info{ 
+    font-size: 22px; 
+    padding: 15px;
+}
+h1.visit-info{
+    text-align: center; 
+    color: darkgoldenrod;
+}
+img.visit-info{
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Tours Page */
+h1.tours-info{
+    text-align: center; 
+    color: darkgoldenrod; 
+}
+p.tours-info{
+    font-size: 22px; 
+    padding: 15px;
+}
+img.tours-info{
+    max-width: 100%;
+}
+
+/*Lectures*/
+h1.lectures-info{
+    text-align: center; 
+    color: darkgoldenrod; 
+}
+p.lectures-info{
+    font-size: 20px; 
+    padding: 15px;
+}
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+/* About Page */
+h1.about-header{
+    text-align: center;
+    color: darkgoldenrod;
+}
+p.about-text{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.about-container{
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+img.about-three{
+    height: 250px;
+    width: 32%;
+    
+}
+img.about-image{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+        max-width: 100%;
+    }
+/* Contact Us Page */
+h1.contact-header{
+    text-align: center; 
+    color: darkgoldenrod;
+}
+.contact-info{
+    display:flex;
+    padding-top: 30px;
+    margin-top: 60px;
+  width:50%; 
+  margin-left:auto; 
+    margin-right: auto;
+  padding: 20px;
+background-color: darkgoldenrod;
+}
+
+form{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    width: 96%;
+    margin: auto;
+    background-color: white;
+}
+
+
+
+
+footer{
+    background-color: white;
+    margin-top: 40px;
+}
+footer p{
+    font-size: 13px;
+    padding-left: 10px;
+    color: #0C2340;
+    line-height: 1.6;
+}
+@media screen and (max-width: 930px){
+/* Home Page*/ 
+    body{
+    width: 100%;
+    }
+    .navbar{
+        display: block;
+    }
+    .navbar img{
+       display: none;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        
+        float:none;
+    }
+    .navbar ul ul{
+        display: none;
+    }
+    .navbar ul li {
+        width:75px;
+    }
+    .index-top{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    .index-top img{
+       max-width: 100%;
+        align-items: center;
+    }
+    .index-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .index-info p{
+        font-size: 12px;
+    }
+    .index-info h1{
+        text-align: center;
+    }
+    
+ .index-container{ 
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     border: 1px solid white;
+    }
+    .bottom{
+        display:none;
+    }
+    .open-house, .tours, .lectures{
+        width: 100%;
+         border: 1px solid white;
+    }
+    
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    img.about-three{
+   flex-direction: column;
+    width: 100%;
+    
+}
+    p.about-text{
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    footer{
+        visibility: hidden;
+    }
+    .contact-info{
+        width: 70%;
+    }
+    
+    form input{
+    width: 90%;
+}
+    form textarea{
+    width: 90%;
+}
+}
+

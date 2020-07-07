@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title> Lectures</title>
+                  <!-- My updated style sheet wouldn't upload to the server, so I had to put the style here. -->
+        <style>
+         @media screen and (max-width: 930px){
+                   .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        float:none;
+                }}
+        </style>
+    </head>
+    
+    
+    <body>
+        <nav class= "navbar">
+        <img src="pitt.png" alt="pitt-logo">
+          <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="about.html">About Us</a></li>
+                <li> <a href="visit.html">Visit Us</a>
+                <ul>
+                        
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="lectures.html">Lectures</a></li>
+                    
+                        </ul>
+               
+
+                <li class="end-of-menu">
+                    <a href="contact.html">Contact Us</a>
+                   
+                </li>
+            </ul>
+    
+    </nav>
+        
+            <h1 class="lectures-info"> Lectures</h1>
+        
+            <p class="lectures-info">
+            Every third Friday of the month (except December) there is a public lecture.  The public lecture nights start at 7:00PM with some light refreshments, the lecture starts at 7:30PM and lasts approximately one hour.  After the lecture there will be a tour of the building.  Reservations are required.<br><br>
+            Below are the dates available for students to attend the obervatory’s lecture for the spring..  Select a date and register.</p>
+        
+            <p id="lecture-info"></p>
+        
+            <button onclick="myFunction()">Register</button>
+        
+            <br><br>
+        
+            <script>
+                function myFunction() {
+                    document.getElementById("lecture-info").innerHTML = "Students enrolled in the spring semester no longer have to attend lectures/tours due to COVID-19. Tours and lectures are cancelled until further notice."
+                    }
+            </script>
+        
+            <table alt="2020 Lecture schedule">
+  <tr>
+    <th>Date</th>
+    <th>Lecture</th>
+    <th>Seats Available</th>
+  </tr>
+  <tr>
+    <td>February 21st</td>
+    <td>Fishing for Black Holes with the Sloan Digital Sky Survey</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>March 20th</td>
+    <td>*Cancelled due to mandatory social distancing requirements</td>
+    <td>--</td>
+  </tr>
+    <tr>
+    <td>April 17th</td>
+    <td>Cancelled due to mandatory social distancing requirements</td>
+    <td>--</td>
+  </tr>
+    <tr>
+    <td>May 15th</td>
+    <td>Detection of Eclipse Shadow Bands above Eath's Atmosphere</td>
+    <td>19</td>
+  </tr>
+    <tr>
+    <td>June 19th</td>
+    <td>TBA</td>
+    <td>27</td>
+  </tr>
+        <tr>
+    <td>August 21st</td>
+    <td>Tentative: LSST</td>
+    <td>33</td>
+  </tr>
+    <tr>
+    <td>September 18th</td>
+    <td>Tentative: The M87 Black Hole</td>
+    <td>35</td>
+  </tr>
+    <tr>
+    <td>October 16th</td>
+    <td>Rise of the Machines (in Physics) </td>
+    <td>35</td>
+  </tr>
+    <tr>
+    <td>November 20th</td>
+    <td>Amateur Astronomy: Finding Dark Skies</td>
+    <td>35</td>
+  </tr>
+</table>
+        
+        
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+             <footer>
+                <p>
+                Allegheny Observatory<br>
+                159 Riverview Avenue <br>
+                Pittsburgh, PA 15214<br>
+                412-321-2400
+                </p>
+            </footer>  
+        
+    </body>
+    
+    
+</html>

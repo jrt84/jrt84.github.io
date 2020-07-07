@@ -1,0 +1,158 @@
+html{
+     background-image: linear-gradient(beige, bisque);
+    
+}
+
+body{
+    width: 900px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{ height: 70px; background-color: white;position: sticky;}
+            
+nav img { border-radius: 40%; height: 60px; padding-left: 5px; padding-top: 10px;}
+        
+nav ul{ list-style-type: none; padding-left: 0; display: inline; float: right; padding-top: 20px; }
+
+nav ul ul{ display: none;}
+
+nav ul li{ width: 150px;}
+
+nav > ul >li{ float: left;}
+
+nav ul a { display: block; text-decoration: none; background-color: white; color: darkgoldenrod; padding: 5px; text-align: center; }
+
+nav ul ul li{width: 150px;}
+
+nav ul a:hover{ background-color: burlywood; color: white;}
+            
+nav ul li:hover > ul{ display:block; }
+            
+nav ul ul li:hover{position: relative;}
+            
+nav ul ul li:hover > ul { position: absolute; display: block; left: 100%; top: 0px;}
+            
+nav ul li.end-of-menu li:hover > ul { position: absolute; display: block; left: -100%; top: 0px;}
+
+.top{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    display: block;
+      padding-bottom: 50px;
+}
+h2.hello {
+     margin: 0 auto;
+    width: 300px;
+    height: 200px; 
+        font-size: 140px;
+        color: burlywood;
+}
+
+h1.top{
+    margin: auto;
+}
+.top p{
+    font-size: 23px;
+    color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom{
+    display: flex;
+    display: row;
+}
+.bottom-projects{
+    
+    background-color: white;
+    margin: 10px;
+    border: 10px;
+    padding-left: 15px;
+}
+.bottom-projects li, .bottom-projects li a {
+    color: black;
+    font-size: 18px;
+}
+.bottom-projects h1 {
+   color: burlywood;
+    text-align: center;
+}
+.bottom-aboutme{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.bottom-aboutme p {
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.bottom-aboutme h1 {
+   color: burlywood;
+    text-align: center;
+}
+
+@media screen and (max-width: 766px) {
+    body { 
+        width: 90%;
+        background-color: white;
+    }
+    nav ul li{
+        width:60px;
+    
+    }
+    h2.hello { 
+        font-size: 100px;
+        color: burlywood;
+}
+    .csdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom{
+        flex-direction: column-reverse;
+      
+    }
+    .bottom-projects{
+        width 100%;
+    }
+    
+    .bottom-aboutme{
+        width: 100%;
+    }
+    .bottom-aboutme p{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body { 
+        width: 90%;
+        
+    }
+    .csdiv{
+        display:flex; flex-direction:row;
+    }
+    .bottom{
+        background-color: bisque;
+    }
+    .bottom-projects{
+     width: 40%;
+        padding: 5px;
+}
+    .bottom-aboutme{
+        background-color: white;
+        width: 60%;
+    }
+    .bottom-aboutme{
+    display: flex;
+    flex-direction: column;
+        padding: 10px;
+     margin: 10px;
+    border: 10px;
+}
+}
